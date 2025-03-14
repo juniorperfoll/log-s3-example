@@ -38,6 +38,8 @@ Antes de executar o projeto, certifique-se de ter:
     BUCKET_NAME=seu-bucket-aqui
 
 5. **Executar o script manualmente:**
+    ```sh
+    node index.js
 
-node index.js
+    
 Após a execução, o script irá gerar um arquivo de log local e enviá-lo automaticamente para o bucket S3 configurado.
