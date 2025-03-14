@@ -23,20 +23,21 @@ Antes de executar o projeto, certifique-se de ter:
    cd seu-repo
 
 2. **Instale as dependências:**
-
-npm install
+    ```sh
+    npm install
 
 3. **Crie um arquivo .env na raiz do projeto e configure suas credenciais da AWS:**
-
-touch .env
+    ```sh
+    touch .env
 
 4. **Adicione o seguinte conteúdo ao arquivo .env:**
+    ```end
+    AWS_ACCESS_KEY_ID=SEU_ACCESS_KEY
+    AWS_SECRET_ACCESS_KEY=SEU_SECRET_KEY
+    AWS_REGION=us-east-1
+    BUCKET_NAME=seu-bucket-aqui
 
-AWS_ACCESS_KEY_ID=SEU_ACCESS_KEY
-AWS_SECRET_ACCESS_KEY=SEU_SECRET_KEY
-AWS_REGION=us-east-1
-BUCKET_NAME=seu-bucket-aqui
-Executar o script manualmente:
+5. **Executar o script manualmente:**
 
 node index.js
 Após a execução, o script irá gerar um arquivo de log local e enviá-lo automaticamente para o bucket S3 configurado.
